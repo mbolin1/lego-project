@@ -41,10 +41,9 @@
 		}
 		.sidebar {
 			position: absolute;
-			left: 75%;
+			right: 0;
 			height: 75%;
-			width:30%;
-			border-radius: 90px 0 0 90px;
+			width: 135px;
 		}
 		.main{
 
@@ -55,11 +54,11 @@
 		.button1 {
 			display:table;
 			text-align:center;
-			position: absolute;
+			position: relative;
 			background-color:#FFF700;
 			top:0;
 			border-radius: 75px 0 0 75px;
-			height: 25%;
+			height: 50px;
 			width:100%;
 		}
 			.button1:hover{
@@ -75,10 +74,10 @@
 		.button2{
 			display:table;
 			text-align:center;
-			position: absolute;
+			position: relative;
 			background-color:#E3D432;
-			top: 25%;
-			height:25%; 
+			/*top: 25%;*/
+			height:50px; 
 			width:100%;
 			border-radius: 75px 0 0 75px;
 		}
@@ -95,10 +94,10 @@
 		.button3{
 			display:table;
 			text-align:center;
-			position: absolute;
+			position: relative;
 			background-color:#FAF8EC;
-			top:50%;
-			height:25%;
+			/*top:50%;*/
+			height:50px;
 			width:100%;
 			border-radius: 75px 0 0 75px;
 		}
@@ -115,11 +114,11 @@
 		.button4{
 			display:table;
 			text-align:center;
-			position: absolute;
+			position: relative;
 			background-color:#704427;
-			bottom:0;
+			/*bottom:0;*/
 			border-radius: 75px 0 0 75px;
-			height:25%;
+			height:50px;
 			width: 100%;
 		}
 		.button4:hover{
@@ -145,7 +144,7 @@
 			vertical-align: middle;
 		}
 		/*http://alistapart.com/article/responsive-web-design*/
-		@media screen and (max-height: 500px){
+		@media screen and (max-height: 375px){
 
 			.bg-img{
 				display: none;
@@ -157,7 +156,7 @@
 				display:none;
 			}
 		}
-		@media screen and (max-width: 650px) {
+		@media screen and (max-width: 350px) {
 
 			.bg-img{
 				display: none;
