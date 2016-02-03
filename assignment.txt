@@ -1,0 +1,55 @@
+The CIO of The Lego Corporation has hired you and your web development crew to design a stylish new website for one of the Lego themes. As with historical Lego precedent, they're going to give you free reign to design and implement the site; they have so much faith in your abilities they're willing to let you choose your own theme.
+Spec:
+
+    Create a website showcasing the awesomeness of one of the Lego themes (Links to an external site.)
+    There should be at least 4 interconnected web pages:
+        Homepage (index.html)
+            basic page, sets standard for the rest of the pages to follow
+            at least one image representing your chosen Lego theme
+            the name and slogan of the club
+        About the theme (about.html)
+            some information about the Lego theme (years , founding)
+            what the theme is about
+            table comparing the value of your selected theme against at least three other themes
+        Sell some Legos (order.html)
+            a page holding a form for visitors to order Legos from your set
+            must require a user to order with a valid
+                first name/last name
+                address (city/state/zip)
+                e-mail
+                date of birth
+                Credit card number
+                requested lego
+                    needs to be a select box of a few Legos offered
+                    selecting a Lego will bring up price, an image, and a description
+        Sitemap (sitemap.html)
+            a simple page listing all of the websites pages that can be reached
+    Each page should use one general style sheet (lego-general.css) that applies a thematic flow to the pages
+        i.e. If I choose to create a site for Naruto Legos, my lego-general.css would apply to all of my pages:
+            an orangish background
+            excited small caps font
+            yellow font for exciting headings
+            maybe some cool blue windswept rasengan-y :hover for my links
+            obviously, you won't be able to use Naruto legos, as they do not exist
+        the lego-general.css will be linked by every page, give it broad enough rules that will be used everywhere
+        pages may have individual stylesheets (i.e. lego-about.css), but no in-line style attributes
+
+Expectations:
+
+    work in groups of up to 3 people
+    html pages will be html5 compliant (tested here (Links to an external site.))
+    css pages will be css3 compliant (tested here (Links to an external site.))
+    all source code will show proper/consistent formatting
+    no erroneous red code in firefox html preview
+    web site will be hosted on people.emich
+
+Deliverables:
+
+    Final Project:
+        Print out of all source code due 7:20pm on the 10th
+        Demo/walkthrough in class
+        Individual writeup of the responsibilities for the group members
+
+Legal Notice
+
+Please appropriately cite text/images taken straight from wikipedia and other sites
