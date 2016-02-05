@@ -12,7 +12,10 @@
 			margin:0;
 			padding:0;
 		}
-		.container1 {
+    
+    /*full layout scheme*/
+    
+		.container {
 			position: absolute;
 			height:100%;
 			width:100%;
@@ -25,113 +28,214 @@
 			text-align: center;
 			position: absolute;
 			width:100%;
-			height: 15%;
+			height:10%;
 			background-color: #C91A09;
 			margin:0;
 			padding: 0;
 		}
-			.inner-container{
+		.inner-container{
 			position: absolute;
 			overflow:hidden;
 			width: 100%;
-			top: 15%;
+			top: 10%;
 			bottom: 0;
 			margin:0;
 			padding:0;
 		}
-		.sidebar {
+		.sidebar-right {
 			position: absolute;
 			right: 0;
 			height: 75%;
+			width: 175px;
+		}
+    
+    .sidebar-left {
+			position: absolute;
+			left: 0;
+			height: 75%;
 			width: 135px;
 		}
+    
 		.main{
 
 		}
 		.footer{
 
 		}
-		.button1 {
+    
+    /*right sided buttons*/
+    
+		.button-home-right{
 			display:table;
 			text-align:center;
 			position: relative;
 			background-color:#FFF700;
 			top:0;
-			border-radius: 75px 0 0 75px;
-			height: 50px;
+			border-radius: 25px 0 0 25px;
+			height: 75px;
 			width:100%;
 		}
-			.button1:hover{
+    
+		.button-home-right:hover{
 			left:-10%;
 			width:110%;
 		}
-			.button1 a{
+		.button-home-right a{
 			display:table-cell;
 			vertical-align:middle;
 			color:black;
 			text-decoration: none;
 		}
-		.button2{
+		.button-buy-right{
 			display:table;
 			text-align:center;
 			position: relative;
 			background-color:#E3D432;
-			/*top: 25%;*/
-			height:50px; 
+			height: 75px;
 			width:100%;
-			border-radius: 75px 0 0 75px;
+			border-radius: 25px 0 0 25px;
 		}
-		.button2:hover{
+		.button-buy-right:hover{
 			left:-10%;
 			width:110%;
 		}
-		.button2 a{
+		.button-buy-right a{
 			display:table-cell;
 			vertical-align:middle;
 			color:black;
 			text-decoration: none;
 		}
-		.button3{
+		.button-about-right{
 			display:table;
 			text-align:center;
 			position: relative;
 			background-color:#FAF8EC;
-			/*top:50%;*/
-			height:50px;
+			height: 75px;
 			width:100%;
-			border-radius: 75px 0 0 75px;
+			border-radius: 25px 0 0 25px;
 		}
-		.button3:hover{
+		.button-about-right:hover{
 			left:-10%;
 			width:110%;
 		}
-		.button3 a{
+		.button-about-right a{
 			display:table-cell;
 			vertical-align:middle;
 			color:black;
 			text-decoration: none;
 		}
-		.button4{
+		.button-map-right{
 			display:table;
 			text-align:center;
 			position: relative;
 			background-color:#704427;
 			/*bottom:0;*/
-			border-radius: 75px 0 0 75px;
-			height:50px;
+			border-radius: 25px 0 0 25px;
+			height: 75px;
 			width: 100%;
 		}
-		.button4:hover{
+		.button-map-right:hover{
 			left:-10%;
 			width:110%;
 		}
-		.button4 a{
+		.button-map-right a{
 			display:table-cell;
 			vertical-align:middle;
 			color:black;
 			text-decoration: none;
 		}
-		#bg-img {
+    
+    /*left sided buttons*/
+    
+    .button-home-left{
+			display:table;
+			text-align:center;
+			position: relative;
+			background-color:#FFF700;
+			top:0;
+			border-radius: 0 25px 25px 0;
+			height: 50px;
+			width:100%;
+		}
+    
+		.button-home-left:hover{
+			right:-10%;
+      left:0;
+			width:110%;
+		}
+		.button-home-left a{
+			display:table-cell;
+			vertical-align:middle;
+			color:black;
+			text-decoration: none;
+		}
+		.button-buy-left{
+			display:table;
+			text-align:center;
+			position: relative;
+			background-color:#E3D432;
+			height:50px; 
+			width:100%;
+			border-radius: 0 25px 25px 0;
+		}
+		.button-buy-left:hover{
+			right:-10%;
+      left:0;
+			width:110%;
+		}
+		.button-buy-left a{
+			display:table-cell;
+			vertical-align:middle;
+			color:black;
+			text-decoration: none;
+		}
+		.button-about-left{
+			display:table;
+			text-align:center;
+			position: relative;
+			background-color:#FAF8EC;
+			height:50px;
+			width:100%;
+			border-radius: 0 25px 25px 0;
+		}
+		.button-about-left:hover{
+			right:-10%;
+      left:0;
+			width:110%;
+		}
+		.button-about-left a{
+			display:table-cell;
+			vertical-align:middle;
+			color:black;
+			text-decoration: none;
+		}
+		.button-map-left{
+			display:table;
+			text-align:center;
+			position: relative;
+			background-color:#704427;
+			border-radius: 0 25px 25px 0;
+			height:50px;
+			width: 100%;
+		}
+		.button-map-left:hover{
+			right:-10%;
+      left:0;
+			width:110%;
+		}
+		.button-map-left a{
+			display:table-cell;
+			vertical-align:middle;
+			color:black;
+			text-decoration: none;
+		}
+    
+		
+    /*mobile layout scheme*/
+    
+    
+    
+    #bg-img {
 			position:absolute;
 			top: 0px;
 			left:0px;
@@ -143,61 +247,46 @@
 			max-width:100%;
 			vertical-align: middle;
 		}
+    
 		/*http://alistapart.com/article/responsive-web-design*/
 		@media screen and (max-height: 375px){
-
-			.bg-img{
-				display: none;
-			}
-			.container1{
+			.container{
 				display: none;
 			} 
-			.inner-container{
-				display:none;
-			}
 		}
 		@media screen and (max-width: 350px) {
-
-			.bg-img{
-				display: none;
-			}
-			.container1{
+			.container{
 				display: none;
 			} 
-			.inner-container{
-				display:none;.0px
-			}
 		}
     </style>  
   </head>
   <body>
-    <div class="container1">
+    <div class="container">
 	    <div class="header">
         <img id="logo" id="bg-img" src="imgs/logo.png" />
       </div>
- 
       <div class="inner-container">
-      
         <img id="bg-img" src="imgs/background.jpg" />
-        <div class="sidebar">
-          <div class="button1">
+        <div class="sidebar-right">
+          <div class="button-home-right">
             <a href="">
-              <h1 id="stuff">Home</h1>
+              <h3 id="stuff">Home</h3>
             </a>
           </div>
-          <div class="button2">
+          <div class="button-buy-right">
             <a href="order.html">
-              <h1 id="stuff">Buy!</h1>
+              <h3 id="stuff">Buy!</h3>
             </a>
           </div>
-          <div class="button3">
+          <div class="button-about-right">
             <a href="about.html">
-              <h1 id="stuff">About</h1>
+              <h3 id="stuff">About</h3>
             </a>
           </div>
-          <div class="button4">
+          <div class="button-map-right">
             <a href="sitemap.html">
-              <h1 id="stuff">Site Map</h1>
+              <h3 id="stuff">Map</h3>
             </a>
           </div>
         </div>
@@ -205,6 +294,11 @@
         </div>
         <div class="footer">
         </div>
+      </div>
+    </div>
+    <div class="mobile-container">
+      <div class="header">
+        <img id="logo" id="bg-img" src="imgs/logo.png" />
       </div>
     </div>
   </body>
