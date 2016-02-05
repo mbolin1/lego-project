@@ -6,26 +6,19 @@
     </title>
 	<link rel="stylesheet" type="text/css" href="lego-general.css">
     <style>
-      body {
-      
-      }
-      .container {
-      
-      }
-      .header {
-      
-      }
-      .sidebar {
-      
-      }
-      .main {
-      
-      }
-      .footer{
-      
-      }
+      body{
+		background: url("imgs/background.jpg");
+	  }
+	  .main{
+		position: absolute;
+		left: 500px;
+	  }
+	  info{
+		position: abosolute;
+		left:300px;
+	  }
 	  #item{
-		border = 2;
+		border = 2 solid black;
 	  }
 	  #itemImg{
 		width: 300px;
@@ -34,22 +27,45 @@
     <script>
 	/*http://stackoverflow.com/questions/6868428/using-javascript-and-a-dropdown-to-change-page-content*/
 		function handleSelect(type){
-			var string = "<table id='item'><tr><td>";
-			string += type + "</td><td>$" + legoSet[type]['price'] + "</td><td><img id='itemImg' src='imgs/"+legoSet[type]['image']+"' /></td></table";
+			var string = "<table id='item' ><tr><td>";
+			string += type + "</td><td>$" + legoSet[type]['price'] + "</td><td><img id='itemImg' src='imgs/"+legoSet[type]['image']+"' /></td><td>"+ legoSet[type]['description']+"</td></table";
 			
-			document.getElementById("footer").innerHTML = string; 
+			document.getElementById("info").innerHTML = string; 
 			
 		}
     </script>
   </head>
   <body>
-    <h1>ORDER SOME CRAP!</h1>
+   
     <div class="container">
-      <div class="header">
+      <div class="header"> 
+		
       </div>
-      <div class="sidebar">
-      </div>
+	  <div class="inner-container">
+        <div class="sidebar-left">
+          <div class="button-home-left">
+            <a href="index.html">
+              <h3 id="stuff">Home</h3>
+            </a>
+          </div>
+          <div class="button-buy-left">
+            <a href="order.html">
+              <h3 id="stuff">Buy!</h3>
+            </a>
+          </div>
+          <div class="button-about-left">
+            <a href="about.html">
+              <h3 id="stuff">About</h3>
+            </a>
+          </div>
+          <div class="button-map-left">
+            <a href="sitemap.html">
+              <h3 id="stuff">Map</h3>
+            </a>
+          </div>
+        </div>
       <div class="main">
+		<h1>ORDER SOME CRAP!</h1>
 		<form>
 			First name:	<input type="text" name="first" /> <br/>
 			Last name: <input type="text" name="last" /> <br/>
@@ -81,11 +97,11 @@
 										}
 								</script>
 							</select>
-                    needs to be a select box of a few Legos offered
-                    selecting a Lego will bring up price, an image, and a description
 		</form>
+		<div id="info" class="info">
+		</div>
       </div>
-      <div id="footer" class="footer">
+      <div class="footer">
       </div>
     </div>
   </body>

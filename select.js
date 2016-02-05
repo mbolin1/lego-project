@@ -54,17 +54,20 @@ var legoSet = {
 	"Adventures of Bikini Bottom" : {
 										'price' : 40.00,
 										'image' : 'AdventureOfBB.jpg',
-										'name' : "Adventures of Bikini Bottom"
+										'name' : "Adventures of Bikini Bottom",
+										'description' : "Contains everything you need for your spongebob adventures."
 									},
 	"The Krusty Krab Adventures" : {
 										'price' : 25.00,
 										'image' : 'TheKKShack.jpg',
-										'name' : "The Krusty Krab Adventures"
+										'name' : "The Krusty Krab Adventures",
+										'description' : "Now you can work like SpongeBob. Yay."
 									},
 	"The Flying Dutchman" : {
 										'price' : 25.00,
 										'image' : 'TFD.jpg',
-										'name' : "The Flying Dutchman"
+										'name' : "The Flying Dutchman",
+										'description' : "Pirates."
 									}
 };
 		
