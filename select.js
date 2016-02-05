@@ -65,7 +65,7 @@ var legoSet = {
 									},
 	"The Flying Dutchman" : {
 										'price' : 25.00,
-										'image' : 'TFD.jpg',
+										'image' : 'TFD.png',
 										'name' : "The Flying Dutchman",
 										'description' : "Pirates."
 									}

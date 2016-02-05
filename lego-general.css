@@ -238,7 +238,50 @@ body {
 	color:black;
 	text-decoration: none;
 }
-
+.iconPineRight{
+	position: absolute;
+	width: 200px;
+	right: 25%;
+}
+.iconKrabsRight{
+	position: absolute;
+	height: 100px;
+	right: 65%;
+}
+.iconDoodleRight{
+	position: absolute;
+	width: 100px;
+	top: 30%;
+	right: 60%;
+}
+.iconMapRight{
+	position: absolute;
+	width: 100px;
+	top: 25%;
+	right: 55%;
+}
+.iconPineLeft{
+	position: absolute;
+	width: 200px;
+	left: 25%;
+}
+.iconKrabsLeft{
+	position: absolute;
+	height: 100px;
+	left: 55%;
+}
+.iconDoodleLeft{
+	position: absolute;
+	width: 100px;
+	top: 30%;
+	left: 60%;
+}
+.iconMapLeft{
+	position: absolute;
+	width: 100px;
+	top: 25%;
+	left: 55%;
+}
 	
 /*mobile layout scheme*/
 

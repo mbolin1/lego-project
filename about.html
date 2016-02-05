@@ -7,7 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="lego-general.css">
     <style>
 	   body{
-		background: url("imgs/background.jpg");
+		background: url("imgs/background.jpg") no-repeat;
 	  }
       body {
         margin:0;
@@ -15,10 +15,26 @@
         padding:0;
       }
       .container {
-        background-color: #3ac9b7;
+       /* background-color: #3ac9b7;*/
         width: 100%;
         height: 100%;
       }
+	  .main{
+		background: rgba(255, 255, 229, .6);
+	  }
+	  .center{
+		position: table;
+		text-align: center;
+		align: center;
+	  }
+	  table{
+	  	display: block;
+		margin: 0 auto;
+		width: 50%;
+	  }
+	  table, th, td{
+		border: 2px dotted #ffff66;
+	  }
     </style>
     <script>
     </script>
@@ -32,61 +48,68 @@
         <div class="sidebar-left">
           <div class="button-home-left">
             <a href="index.html">
+			  <img class="iconPineLeft" src="imgs/pineapple.png" />
               <h3 id="stuff">Home</h3>
             </a>
           </div>
           <div class="button-buy-left">
             <a href="order.html">
+			  <img class="iconKrabsLeft" src="imgs/mrKrabs.png" />
               <h3 id="stuff">Buy!</h3>
             </a>
           </div>
           <div class="button-map-left">
             <a href="sitemap.html">
+			  <img class="iconMapLeft" src="imgs/FlyingDuchmansTreasureMap.png" />
               <h3 id="stuff">Map</h3>
             </a>
           </div>
         </div>
       <div class="main">
-	     <h1>Spongebob Squarepants</h1>
+		<div class="center">
+			<h1>Spongebob Squarepants</h1>
+		</div>
         <p>The SpongeBob SquarePants theme was founded in 2006 with it's first Adventures in Bikini Bottom set and went on for 3 years before ending in 2009. It later made a return from 2011 to 2012. Since then this theme has been retired, but is soon to make a comeback with our amazing new deals and mint condition recreations!</p>
         <p>The SpongeBob SquarePants theme is based on a Nickelodeon T.V. show with the same name. It is about a happy sponge, and his friends, as he enjoys life. From working at the best place in the world as a fry cook, to going to Glove World<sup>tm</sup></p>
         <br/>
-        <table>
-          <tr>
-            <th>
-              SpongeBob SquarePants 
-            </th>
-            <th>
-              Pirates
-            </th>
-            <th>
-              Jurassic World
-            </th>
-            <th>
-              Ideas
-            </th>
-          </tr>
-          <tr>
-            <td>
-              Worth about $380 <br/>
-              Clairinets <br/>
-              Rick
-            </td>
-            <td>
-              Worth about $488 <br/>
-              No Flying Dutchman <br/>
-            </td>
-            <td>
-              Worth $350 <br/>
-              No sponges
-            </td>
-            <td>
-              Worth at least $475 <br/>
-              SpongeBob loses <br/>
-              I want Birds <br/>
-            </td>
-          </tr>
-        </table>
+		<div class="center">
+			<table>
+			  <tr>
+				<th>
+				  SpongeBob SquarePants 
+				</th>
+				<th>
+				  Pirates
+				</th>
+				<th>
+				  Jurassic World
+				</th>
+				<th>
+				  Ideas
+				</th>
+			  </tr>
+			  <tr>
+				<td>
+				  Worth about $380 <br/>
+				  Clairinets <br/>
+				  Rick
+				</td>
+				<td>
+				  Worth about $488 <br/>
+				  No Flying Dutchman <br/>
+				</td>
+				<td>
+				  Worth $350 <br/>
+				  No sponges
+				</td>
+				<td>
+				  Worth at least $475 <br/>
+				  SpongeBob loses <br/>
+				  I want Birds <br/>
+				</td>
+			  </tr>
+			</table>
+		</div>
       </div>
       <div class="footer">
       </div>

@@ -14,10 +14,16 @@
       .main{
         position: absolute;
         left: 500px;
+		background: rgba(255, 255, 229, .6);
       }
-      info{
-        position: abosolute;
-        left:300px;
+	  .center{
+		position: table;
+		text-align: center;
+		align: center;
+	  }
+      .info{
+        left: 250px;
+		top: 350px;
       }
       #item{
         border = 2 solid black;
@@ -47,23 +53,26 @@
         <div class="sidebar-left">
           <div class="button-home-left">
             <a href="index.html">
+			  <img class="iconPineLeft" src="imgs/pineapple.png" />
               <h3 id="stuff">Home</h3>
             </a>
           </div>
           <div class="button-about-left">
             <a href="about.html">
+			  <img class="iconDoodleLeft" src="imgs/doodlebob.png" />
               <h3 id="stuff">About</h3>
             </a>
           </div>
           <div class="button-map-left">
             <a href="sitemap.html">
+			  <img class="iconMapLeft" src="imgs/FlyingDuchmansTreasureMap.png" />
               <h3 id="stuff">Map</h3>
             </a>
           </div>
         </div>
       <div class="main">
 		<h1>ORDER SOME CRAP!</h1>
-		<form>
+		<form class="center">
 			First name:	<input type="text" name="first" /> <br/>
 			Last name: <input type="text" name="last" /> <br/>
             Address	<br/>
@@ -95,9 +104,10 @@
 								</script>
 							</select>
 		</form>
-		<div id="info" class="info">
-		</div>
+		
       </div>
+	  <div id="info" class="main info">
+	  </div>
       <div class="footer">
       </div>
     </div>
