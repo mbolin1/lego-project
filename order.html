@@ -6,31 +6,22 @@
     </title>
 	<link rel="stylesheet" type="text/css" href="lego-general.css">
     <style>
-      body{
-        background: url("imgs/background.jpg") no-repeat;
-        height: 100%;
-        width:100%;
-      }
-      .main{
-        position: absolute;
-        left: 500px;
-		background: rgba(255, 255, 229, .6);
-      }
+      
 	  .center{
-		position: table;
-		text-align: center;
-		align: center;
+      position: table;
+      text-align: center;
+      align: center;
 	  }
-      .info{
-        left: 250px;
-		top: 350px;
-      }
-      #item{
-        border = 2 solid black;
-      }
-      #itemImg{
-        width: 300px;
-      }
+    .info{
+      left: 250px;
+      top: 350px;
+    }
+    #item{
+      border = 2 solid black;
+    }
+    #itemImg{
+      width: 300px;
+    }
     </style>
     <script>
 	/*http://stackoverflow.com/questions/6868428/using-javascript-and-a-dropdown-to-change-page-content*/
@@ -50,27 +41,28 @@
         <img id="logo" src="imgs/logo.png" />
       </div>
 	  <div class="inner-container">
+        <img id="bg-img" src="imgs/background.jpg" alt="background"/>
         <div class="sidebar-left">
           <div class="button-home-left">
             <a href="index.html">
 			  <img class="iconPineLeft" src="imgs/pineapple.png" />
-              <h3 id="stuff">Home</h3>
+              <h1 id="stuff">Home</h1>
             </a>
           </div>
           <div class="button-about-left">
             <a href="about.html">
 			  <img class="iconDoodleLeft" src="imgs/doodlebob.png" />
-              <h3 id="stuff">About</h3>
+              <h1 id="stuff">About</h1>
             </a>
           </div>
           <div class="button-map-left">
             <a href="sitemap.html">
 			  <img class="iconMapLeft" src="imgs/FlyingDuchmansTreasureMap.png" />
-              <h3 id="stuff">Map</h3>
+              <h1 id="stuff">Map</h1>
             </a>
           </div>
         </div>
-      <div class="main">
+      <div class="main-left">
 		<h1>ORDER SOME CRAP!</h1>
 		<form class="center">
 			First name:	<input type="text" name="first" /> <br/>
