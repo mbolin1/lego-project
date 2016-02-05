@@ -4,290 +4,48 @@
     <title>
       Homepage
     </title>
-	<link rel="stylesheet" type="text/css" href="lego-general.css">
+    <link rel="stylesheet" type="text/css" href="lego-general.css">
     <script>
     </script>
     <style>
-		body {
-			overflow: hidden;
-			margin:0;
-			padding:0;
-		}
-    
-    /*full layout scheme*/
-    
-		.container {
-			position: absolute;
-			height:100%;
-			width:100%;
-			margin: 0;
-			padding: 0;
-			background-image: url("background.jpg") no-repeat;
-		}
-
-		.header {
-			text-align: center;
-			position: absolute;
-			width:100%;
-			height:10%;
-			background-color: #C91A09;
-			margin:0;
-			padding: 0;
-		}
-		.inner-container{
-			position: absolute;
-			overflow:hidden;
-			width: 100%;
-			top: 10%;
-			bottom: 0;
-			margin:0;
-			padding:0;
-		}
-		.sidebar-right {
-			position: absolute;
-			right: 0;
-			height: 75%;
-			width: 175px;
-		}
-    
-    .sidebar-left {
-			position: absolute;
-			left: 0;
-			height: 75%;
-			width: 135px;
-		}
-    
-		.main{
-
-		}
-		.footer{
-
-		}
-    
-    /*right sided buttons*/
-    
-		.button-home-right{
-			display:table;
-			text-align:center;
-			position: relative;
-			background-color:#FFF700;
-			top:0;
-			border-radius: 25px 0 0 25px;
-			height: 75px;
-			width:100%;
-		}
-    
-		.button-home-right:hover{
-			left:-10%;
-			width:110%;
-		}
-		.button-home-right a{
-			display:table-cell;
-			vertical-align:middle;
-			color:black;
-			text-decoration: none;
-		}
-		.button-buy-right{
-			display:table;
-			text-align:center;
-			position: relative;
-			background-color:#E3D432;
-			height: 75px;
-			width:100%;
-			border-radius: 25px 0 0 25px;
-		}
-		.button-buy-right:hover{
-			left:-10%;
-			width:110%;
-		}
-		.button-buy-right a{
-			display:table-cell;
-			vertical-align:middle;
-			color:black;
-			text-decoration: none;
-		}
-		.button-about-right{
-			display:table;
-			text-align:center;
-			position: relative;
-			background-color:#FAF8EC;
-			height: 75px;
-			width:100%;
-			border-radius: 25px 0 0 25px;
-		}
-		.button-about-right:hover{
-			left:-10%;
-			width:110%;
-		}
-		.button-about-right a{
-			display:table-cell;
-			vertical-align:middle;
-			color:black;
-			text-decoration: none;
-		}
-		.button-map-right{
-			display:table;
-			text-align:center;
-			position: relative;
-			background-color:#704427;
-			/*bottom:0;*/
-			border-radius: 25px 0 0 25px;
-			height: 75px;
-			width: 100%;
-		}
-		.button-map-right:hover{
-			left:-10%;
-			width:110%;
-		}
-		.button-map-right a{
-			display:table-cell;
-			vertical-align:middle;
-			color:black;
-			text-decoration: none;
-		}
-    
-    /*left sided buttons*/
-    
-    .button-home-left{
-			display:table;
-			text-align:center;
-			position: relative;
-			background-color:#FFF700;
-			top:0;
-			border-radius: 0 25px 25px 0;
-			height: 50px;
-			width:100%;
-		}
-    
-		.button-home-left:hover{
-			right:-10%;
-      left:0;
-			width:110%;
-		}
-		.button-home-left a{
-			display:table-cell;
-			vertical-align:middle;
-			color:black;
-			text-decoration: none;
-		}
-		.button-buy-left{
-			display:table;
-			text-align:center;
-			position: relative;
-			background-color:#E3D432;
-			height:50px; 
-			width:100%;
-			border-radius: 0 25px 25px 0;
-		}
-		.button-buy-left:hover{
-			right:-10%;
-      left:0;
-			width:110%;
-		}
-		.button-buy-left a{
-			display:table-cell;
-			vertical-align:middle;
-			color:black;
-			text-decoration: none;
-		}
-		.button-about-left{
-			display:table;
-			text-align:center;
-			position: relative;
-			background-color:#FAF8EC;
-			height:50px;
-			width:100%;
-			border-radius: 0 25px 25px 0;
-		}
-		.button-about-left:hover{
-			right:-10%;
-      left:0;
-			width:110%;
-		}
-		.button-about-left a{
-			display:table-cell;
-			vertical-align:middle;
-			color:black;
-			text-decoration: none;
-		}
-		.button-map-left{
-			display:table;
-			text-align:center;
-			position: relative;
-			background-color:#704427;
-			border-radius: 0 25px 25px 0;
-			height:50px;
-			width: 100%;
-		}
-		.button-map-left:hover{
-			right:-10%;
-      left:0;
-			width:110%;
-		}
-		.button-map-left a{
-			display:table-cell;
-			vertical-align:middle;
-			color:black;
-			text-decoration: none;
-		}
-    
-		
-    /*mobile layout scheme*/
-    
-    
-    
-    #bg-img {
-			position:absolute;
-			top: 0px;
-			left:0px;
-			height:100%;
-			width:100%;
-		}
-		#logo{
-			max-height:100%;
-			max-width:100%;
-			vertical-align: middle;
-		}
-    
-		/*http://alistapart.com/article/responsive-web-design*/
-		@media screen and (max-height: 375px){
-			.container{
-				display: none;
-			} 
-		}
-		@media screen and (max-width: 350px) {
-			.container{
-				display: none;
-			} 
-		}
+      .button-home-right{
+        display:none;
+      }
+      .mobile-home-button{
+        display:none;
+      }
     </style>  
   </head>
   <body>
     <div class="container">
 	    <div class="header">
-        <img id="logo" id="bg-img" src="imgs/logo.png" />
+        <img id="logo" src="imgs/logo.png" />
       </div>
       <div class="inner-container">
         <img id="bg-img" src="imgs/background.jpg" />
+        <div id="home-div">
+          <img id="sponge-bob-logo"src="imgs/SpongeBob_logo.png" />
+        </div>
+        
         <div class="sidebar-right">
           <div class="button-home-right">
             <a href="">
-              <h3 id="stuff">Home</h3>
+              <h1 id="stuff">Home</h1>
             </a>
           </div>
           <div class="button-buy-right">
             <a href="order.html">
-              <h3 id="stuff">Buy!</h3>
+              <h1 id="stuff">Buy!</h1>
             </a>
           </div>
           <div class="button-about-right">
             <a href="about.html">
-              <h3 id="stuff">About</h3>
+              <h1 id="stuff">About</h1>
             </a>
           </div>
           <div class="button-map-right">
             <a href="sitemap.html">
-              <h3 id="stuff">Map</h3>
+              <h1 id="stuff">Map</h1>
             </a>
           </div>
         </div>
@@ -298,8 +56,33 @@
       </div>
     </div>
     <div class="mobile-container">
-      <div class="header">
+      <div class="mobile-header">
         <img id="logo" id="bg-img" src="imgs/logo.png" />
+      </div>
+      <div class="inner-mobile-container">
+        <div class="mobile-bar">
+          <div class="mobile-home-button">
+            <a href="">
+              <h1>Home</h1>
+            </a>
+          </div>
+          <div class="mobile-buy-button">
+            <a href="order.html">
+              <h1>Buy!</h1>
+            </a>
+          </div>
+          <div class="mobile-about-button">
+            <a href="about.html">
+              <h1>About</h1>
+            </a>
+          </div>
+          <div class="mobile-map-button">
+            <a href="sitemap.html">
+              <h1>Map</h1>
+            </a>
+          </div>
+          <img id="mobile-pineapple"src="imgs/pineapple.png" />
+        </div>
       </div>
     </div>
   </body>
