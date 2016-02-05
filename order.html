@@ -4,6 +4,7 @@
     <title>
       Order
     </title>
+	<link rel="stylesheet" type="text/css" href="lego-general.css">
     <style>
       body {
       
@@ -23,8 +24,22 @@
       .footer{
       
       }
+	  #item{
+		border = 2;
+	  }
+	  #itemImg{
+		width: 300px;
+	  }
     </style>
     <script>
+	/*http://stackoverflow.com/questions/6868428/using-javascript-and-a-dropdown-to-change-page-content*/
+		function handleSelect(type){
+			var string = "<table id='item'><tr><td>";
+			string += type + "</td><td>$" + legoSet[type]['price'] + "</td><td><img id='itemImg' src='imgs/"+legoSet[type]['image']+"' /></td></table";
+			
+			document.getElementById("footer").innerHTML = string; 
+			
+		}
     </script>
   </head>
   <body>
@@ -35,8 +50,42 @@
       <div class="sidebar">
       </div>
       <div class="main">
+		<form>
+			First name:	<input type="text" name="first" /> <br/>
+			Last name: <input type="text" name="last" /> <br/>
+            Address	<br/>
+				City: <input type="text" name="city" /> <br/>
+				State: 
+						<select>
+							<script  src="select.js" type="text/javascript"></script>
+							<script type="text/javascript">
+							document.write('<option> </option>');
+							for( var key in states){
+							    document.write('<option>');
+							    document.write(states[key]);
+							    document.write('</option>');
+							}
+							</script>
+						</select>	<br/>
+				Zip:	<input type="number" name="zip" /> <br/>
+            e-mail: <input type="text" name="email" /> <br/>
+            Date of birth: <input type="date" name="email" /> <br/>
+            Credit card number:	<input type="text" name="email" /> <br/>
+            requested lego: <select onchange="handleSelect(this.value)">
+								<script type="text/javascript">
+									document.write('<option> </option>');
+									for( var key2 in legoSet){
+										document.write('<option>');
+										document.write(legoSet[key2]['name']);
+										document.write('</option>');
+										}
+								</script>
+							</select>
+                    needs to be a select box of a few Legos offered
+                    selecting a Lego will bring up price, an image, and a description
+		</form>
       </div>
-      <div class="footer">
+      <div id="footer" class="footer">
       </div>
     </div>
   </body>
