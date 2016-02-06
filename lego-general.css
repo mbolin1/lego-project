@@ -34,7 +34,7 @@ option {
 	width:100%;
 	margin: 0;
 	padding: 0;
-	background-image: url("imgs/background.jpg") no-repeat;
+	/*background-image: url("imgs/background.jpg") no-repeat;*/
 }
 
 .header {
@@ -47,23 +47,21 @@ option {
 	margin:0;
 	padding: 0;
 }
-	
+
 .inner-container{
+	display:fixed;
+	overflow: auto;
+    
 	position: absolute;
-	overflow:hidden;
+	/*overflow:hidden;*/
 	width: 100%;
 	top: 10%;
 	bottom: 0;
 	margin:0;
 	padding:0;
-}
-
-.sidebar-right {
-	position: absolute;
-	top: 0;
-	right: 0;
-	height: auto;
-	width: 200px;
+	background-image: url("imgs/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .sidebar-left {
@@ -72,14 +70,6 @@ option {
 	left: 0;
 	height: auto;
 	width: 200px;
-}
-
-.main-right{
-	margin: 15px;
-	padding: 10px;
-	position: absolute;
-	right: 200px;
-	left:0;
 }
 
 .main-left{
@@ -100,6 +90,11 @@ option {
 	background: rgba(255, 255, 229, .6);
 }
 
+.about-info{
+	padding: 10px;
+	background: rgba(255, 255, 229, .6);
+}
+
 #info{
 	visibility: hidden;
 	position: absolute;
@@ -112,90 +107,6 @@ option {
 
 .footer{
 
-}
-
-/*right sided buttons*/
-
-.button-home-right{
-	display:table;
-	text-align:center;
-	position: relative;
-	background-color:#FFF700;
-	border-radius: 25px 0 0 25px;
-	height: 75px;
-	width:100%;
-}
-
-.button-home-right:hover{
-	left:-10px;
-	right:0;
-	width:105%;
-}
-.button-home-right a{
-	display:table-cell;
-	vertical-align:middle;
-	color:black;
-	text-decoration: none;
-}
-.button-buy-right{
-	display:table;
-	text-align:center;
-	position: relative;
-	background-color:#E3D432;
-	height: 75px;
-	width:100%;
-	border-radius: 25px 0 0 25px;
-}
-.button-buy-right:hover{
-	left:-10px;
-	right:0;
-	width:105%;
-}
-.button-buy-right a{
-	display:table-cell;
-	vertical-align:middle;
-	color:black;
-	text-decoration: none;
-}
-.button-about-right{
-	display:table;
-	text-align:center;
-	position: relative;
-	background-color:#FAF8EC;
-	height: 75px;
-	width:100%;
-	border-radius: 25px 0 0 25px;
-}
-.button-about-right:hover{
-	left:-10px;
-	right:0;
-	width:105%;
-}
-.button-about-right a{
-	display:table-cell;
-	vertical-align:middle;
-	color:black;
-	text-decoration: none;
-}
-.button-map-right{
-	display:table;
-	text-align:center;
-	position: relative;
-	background-color:#704427;
-	border-radius: 25px 0 0 25px;
-	height: 75px;
-	width: 100%;
-}
-.button-map-right:hover{
-	left:-10px;
-	right:0;
-	width:105%;
-}
-.button-map-right a{
-	display:table-cell;
-	vertical-align:middle;
-	color:black;
-	text-decoration: none;
 }
 
 /*left sided buttons*/
@@ -281,36 +192,7 @@ option {
 	color:black;
 	text-decoration: none;
 }
-.iconPineRight{
-	position: absolute;
-	left:-5px;
-	top: 10px;
-	width: 50px;
-	height: 75px;
-}
-.iconKrabsRight{
-	position: absolute;
-	right:5px;
-	top: 5px;
-	width: 50px;
-	height: 65px;
-}
-.iconDoodleRight{
-	position: absolute;
-	right:5px;
-	top: 15px;
-	bottom: 10px;
-	width: 50px;
-	height: 50px;
-}
-.iconMapRight{
-	position: absolute;
-	right:5px;
-	top: 5px;
-	bottom: 10px;
-	width: 55px;
-	height: 65px;
-}
+
 .iconPineLeft{
 	position: absolute;
 	top:5px;
@@ -319,6 +201,7 @@ option {
 	width: 50px;
 	height: 65px;
 }
+
 .iconKrabsLeft{
 	position: absolute;
 	left:5px;
@@ -326,6 +209,7 @@ option {
 	width: 50px;
 	height: 65px;
 }
+
 .iconDoodleLeft{
 	position: absolute;
 	left:2px;
@@ -334,6 +218,7 @@ option {
 	width: 50px;
 	height: 50px;
 }
+
 .iconMapLeft{
 	position: absolute;
 	left:5px;
@@ -450,7 +335,7 @@ option {
 	top: 0px;
 	left:0px;
 	height:100%;
-	width:100%;
+	width: 100%;
 }
 
 #logo{
@@ -461,10 +346,10 @@ option {
 
 #home-div{
 	position: absolute;
-	top: 15%;
-	height:100%;
-	left:0;
-	right:200px;
+	padding-top: 5%;
+	height:auto;
+	right:0;
+	left:200px;
 }
 #sponge-bob-logo{
 	display: block;
