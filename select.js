@@ -51,6 +51,12 @@
 			};
 			
 var legoSet = {
+	"Select A Set"				  : {
+										'price': 0.00,
+										'image' : 'cat.jpg',
+										'name' : "Select A Set",
+										'description' : "NONE"
+									},
 	"Adventures of Bikini Bottom" : {
 										'price' : 40.00,
 										'image' : 'AdventureOfBB.jpg',

@@ -15,6 +15,15 @@ body {
 	margin:0;
 	padding:0;
 }
+
+
+select {
+	text-align:center;
+}
+
+option {
+	text-align:center;
+}
     
 /*full layout scheme*/
 
@@ -75,11 +84,29 @@ body {
 
 .main-left{
 	position: absolute;
-	vertical-align:middle;
-	text-align:center;
 	margin: 15px;
-	padding: 10px;
+	padding-top: 15px;
+	margin-top: 0;
 	left: 200px;
+}
+
+.order{
+	position: absolute;
+	left: 0;
+	width: 300px;
+	height: 400px;
+	text-align:center;
+	padding: 10px;
+	background: rgba(255, 255, 229, .6);
+}
+
+#info{
+	visibility: hidden;
+	position: absolute;
+	text-align:center;
+	left: 335px;
+	padding: 10px;
+	height: 400px;
 	background: rgba(255, 255, 229, .6);
 }
 

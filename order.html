@@ -6,16 +6,13 @@
     </title>
 	<link rel="stylesheet" type="text/css" href="lego-general.css">
     <style>
-      
+    
 	  .center{
       position: table;
       text-align: center;
       align: center;
 	  }
-    .info{
-      left: 200px;
-      top: 200px;
-    }
+    
     #item{
       border = 2 solid black;
     }
@@ -27,7 +24,21 @@
 	/*http://stackoverflow.com/questions/6868428/using-javascript-and-a-dropdown-to-change-page-content*/
 		function handleSelect(type){
 			var string = "<table id='item' ><tr><td colspan='3'><h2>";
-			string += type + "</h2></td></tr><tr><td colspan='3'><img id='itemImg' src='imgs/" + legoSet[type]['image'] + "' /></td></tr><tr><td colspan='3'>"+legoSet[type]['description']+"</td></tr><td></td><th>$"+ legoSet[type]['price']+"</th><td></td></tr></table>";
+			string += type 
+      + "</h2></td></tr><tr><td colspan='3'><img id='itemImg' src='imgs/" 
+      + legoSet[type]['image'] 
+      + "' /></td></tr><tr><td colspan='3'>"
+      +legoSet[type]['description']
+      +"</td></tr><td></td><th>$"
+      + legoSet[type]['price']
+      +"</th><td></td></tr></table>";
+      
+      if(type === "Select A Set"){
+        string += "<style>#info{visibility:hidden}</style>";
+      }else{
+        string += "<style>#info{visibility:visible}</style>";
+      }
+
 			
 			document.getElementById("info").innerHTML = string; 
 			
@@ -62,46 +73,43 @@
           </div>
         </div>
       <div class="main-left">
-		<div>
-			<h1>ORDER SOME CRAP!</h1>
-			<form>
-				First name:	<input type="text" name="first" /> <br/>
-				Last name: <input type="text" name="last" /> <br/>
-				Address	<br/>
-					City: <input type="text" name="city" /> <br/>
-					State: 
-							<select>
-								<script  src="select.js" type="text/javascript"></script>
-								<script type="text/javascript">
-								document.write('<option> </option>');
-								for( var key in states){
-									document.write('<option>');
-									document.write(states[key]);
-									document.write('</option>');
-								}
-								</script>
-							</select>	<br/>
-					Zip:	<input type="number" name="zip" /> <br/>
-				e-mail: <input type="text" name="email" /> <br/>
-				Date of birth: <input type="date" name="email" /> <br/>
-				Credit card number:	<input type="text" name="email" /> <br/>
-				requested lego: <select onchange="handleSelect(this.value)">
-									<script type="text/javascript">
-										document.write('<option> </option>');
-										for( var key2 in legoSet){
-											document.write('<option>');
-											document.write(legoSet[key2]['name']);
-											document.write('</option>');
-											}
-									</script>
-								</select><br/>
-				<input type="submit" value="PURCHASE THE CRAP!"/>
-			</form>
-			</div>
-		<div>
-			<div id="info" class="main-left info">
-			</div>
-		</div>
+        <div class="order">
+          <h1>ORDER SOME CRAP!</h1>
+          <form>
+            First name:	<input type="text" name="first" /> <br/>
+            Last name: <input type="text" name="last" /> <br/>
+            Address	<br/>
+              City: <input type="text" name="city" /> <br/>
+              State: 
+                  <select>
+                    <script  src="select.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                    document.write('<option> </option>');
+                    for( var key in states){
+                      document.write('<option>');
+                      document.write(states[key]);
+                      document.write('</option>');
+                    }
+                    </script>
+                  </select>	<br/>
+              Zip:	<input type="number" name="zip" /> <br/>
+            e-mail: <input type="text" name="email" /> <br/>
+            Date of birth: <input type="date" name="email" /> <br/>
+            Credit card number:	<input type="text" name="email" /> <br/>
+            requested lego: <select onchange="handleSelect(this.value)">
+                      <script type="text/javascript">
+                        for( var key2 in legoSet){
+                          document.write('<option>');
+                          document.write(legoSet[key2]['name']);
+                          document.write('</option>');
+                          }
+                      </script>
+                    </select><br/>
+            <input type="submit" value="PURCHASE THE CRAP!"/>
+          </form>
+        </div>
+        <div id="info" >
+        </div>
       </div>
 	  
       <div class="footer">
