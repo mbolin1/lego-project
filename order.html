@@ -79,20 +79,22 @@
             First name:	<input type="text" name="first" /> <br/>
             Last name: <input type="text" name="last" /> <br/>
             Address	<br/>
-              City: <input type="text" name="city" /> <br/>
-              State: 
-                  <select>
-                    <script  src="select.js" type="text/javascript"></script>
-                    <script type="text/javascript">
-                    document.write('<option> </option>');
-                    for( var key in states){
-                      document.write('<option>');
-                      document.write(states[key]);
-                      document.write('</option>');
-                    }
-                    </script>
-                  </select>	<br/>
-              Zip:	<input type="number" name="zip" /> <br/>
+			  <div class="moveTheTrainOver">
+				  City: <input type="text" name="city" /> <br/>
+				  State: 
+					  <select>
+						<script  src="select.js" type="text/javascript"></script>
+						<script type="text/javascript">
+						document.write('<option> </option>');
+						for( var key in states){
+						  document.write('<option>');
+						  document.write(states[key]);
+						  document.write('</option>');
+						}
+						</script>
+					  </select>	<br/>
+				  Zip:	<input type="number" name="zip" /> <br/>
+			  </div>
             e-mail: <input type="text" name="email" /> <br/>
             Date of birth: <input type="date" name="email" /> <br/>
             Credit card number:	<input type="text" name="email" /> <br/>
