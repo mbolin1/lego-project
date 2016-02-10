@@ -1,6 +1,6 @@
-/* http://stackoverflow.com/questions/17234768/font-face-not-working-for-my-ttf-font-in-all-browsers */
-
-
+/* 
+http://stackoverflow.com/questions/17234768/
+	font-face-not-working-for-my-ttf-font-in-all-browsers */
 @font-face {
 	font-family: 'krabby_pattyregular';
 	src: url('fonts/krabby_patty-webfont.woff2') format('woff2'),
@@ -27,6 +27,11 @@ option {
 }
     
 /*full layout scheme*/
+
+.center{
+	text-align: center;
+}
+	  
 .td-border-off {
 	border: none;
 }

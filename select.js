@@ -61,7 +61,8 @@ var legoSet = {
 										'price' : 40.00,
 										'image' : 'AdventureOfBB.jpg',
 										'name' : "Adventures of Bikini Bottom",
-										'description' : "Contains everything you need for your spongebob adventures."
+										'description' : "Contains everything you need for your" 
+											+" spongebob adventures."
 									},
 	"The Krusty Krab Adventures" : {
 										'price' : 25.00,
