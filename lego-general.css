@@ -27,6 +27,9 @@ option {
 }
     
 /*full layout scheme*/
+.td-border-off {
+	border: none;
+}
 
 .container {
 	overflow: hidden;
@@ -107,7 +110,6 @@ option {
 .orderCred{
 	position: absolute;
 	left: 0;
-	width: 600px;
 	padding: 10px;
 	background: rgba(255, 255, 229, .6);
 }
