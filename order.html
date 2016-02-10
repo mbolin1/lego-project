@@ -1,20 +1,19 @@
 <!doctype html>
 <html>
   <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
     <title>
       Order
     </title>
 	<link rel="stylesheet" type="text/css" href="lego-general.css">
-    <style>
+    <style type="text/css">
     
-	  .center{
-      position: table;
+	.center{
       text-align: center;
-      align: center;
-	  }
+	}
     
     #item{
-      border = 2 solid black;
+      border : 2px solid black;
     }
     #itemImg{
       width: 300px;
@@ -48,27 +47,27 @@
   <body>
     <div class="container">
       <div class="header"> 
-        <img id="logo" src="imgs/logo.png" />
+        <img id="logo" src="imgs/logo.png" alt="Lego"/>
       </div>
 	  <div class="inner-container">
-        <img id="bg-img" src="imgs/background.jpg" alt="background"/>
+        <img id="bg-img" src="imgs/background.jpg" alt=""/>
         <div class="sidebar-left">
           <div class="button-home-left">
             <a href="index.html">
-			  <img class="iconPineLeft" src="imgs/pineapple.png" />
-              <h1 id="stuff">Home</h1>
+			  <img class="iconPineLeft" src="imgs/pineapple.png" alt=""/>
+              <h1>Home</h1>
             </a>
           </div>
           <div class="button-about-left">
             <a href="about.html">
-			  <img class="iconDoodleLeft" src="imgs/doodlebob.png" />
-              <h1 id="stuff">About</h1>
+			  <img class="iconDoodleLeft" src="imgs/doodlebob.png" alt=""/>
+              <h1>About</h1>
             </a>
           </div>
           <div class="button-map-left">
             <a href="sitemap.html">
-			  <img class="iconMapLeft" src="imgs/FlyingDuchmansTreasureMap.png" />
-              <h1 id="stuff">Map</h1>
+			  <img class="iconMapLeft" src="imgs/FlyingDuchmansTreasureMap.png" alt=""/>
+              <h1>Map</h1>
             </a>
           </div>
         </div>
@@ -96,8 +95,8 @@
 				  Zip:	<input type="number" name="zip" /> <br/>
 			  </div>
             e-mail: <input type="text" name="email" /> <br/>
-            Date of birth: <input type="date" name="email" /> <br/>
-            Credit card number:	<input type="text" name="email" /> <br/>
+            Date of birth: <input type="date" name="bDay" /> <br/>
+            Credit card number:	<input type="text" name="ccNum" /> <br/>
             requested lego: <select onchange="handleSelect(this.value)">
                       <script type="text/javascript">
                         for( var key2 in legoSet){
@@ -116,6 +115,7 @@
 	  
       <div class="footer">
       </div>
-    </div>
+      </div>
+	</div>
   </body>
 </html>
